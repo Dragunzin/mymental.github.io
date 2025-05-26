@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(51, 151, 41);
+    padding: 0 50px;
+}
+#menu{
+    background-color:rgb(51, 151, 41);
+    margin-left: auto;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    display: inline;
+}
+#menu ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+#menu ul li a:hover{
+    color:black ;
+    background-color: white;
+    transition: 1s all;
+}
+h1{
+    text-align: center;
+}
+#logo2{
+    text-align: center;
+}
+.funcao-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.funcao-container img {
+    border-radius: 5px;
+}
+
+.funcao-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.quest-contaneir {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    justify-content: flex-end; 
+    width: 100%;
+
+}
+.funcao-container img {
+    border-radius: 5px;
+}
+.funcao-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h3{
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    margin-top: 5px;
+    min-width: 150px;
+    
+}
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: rgb(51, 151, 41);
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgba(51, 151, 41, 0.1);
+}
+
+.quadrado {
+    display: inline-block;   
+    padding: 10px 20px;      
+    border: 2px solid rgb(51, 151, 41); 
+    border-radius: 5px;      
+    text-decoration: none;  
+    color: rgb(51, 151, 41); 
+    font-weight: bold;      
+    transition: 0.3s;        
+}
+/*parte dos documentso(saudemental.html)*/
+.quadrado:hover {
+    background-color: rgb(51, 151, 41); 
+    color: white;                       
+}
+.quadrado2 {
+    display: inline-block;   
+    padding: 10px 20px;      
+    border: 2px solid rgb(51, 151, 41); 
+    border-radius: 5px;      
+    text-decoration: none;  
+    color: rgb(51, 151, 41); 
+    font-weight: bold;      
+    transition: 0.3s;
+    text-align: center;     
+}
+/*parte dos documentso(saudemental.html)*/
+.quadrado2:hover {
+    background-color: rgb(51, 151, 41); 
+    color: white;
+}
+.divmental{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+/*documento ansiedade*/
+#docs{
+   align-items:center  ;
+}
+.titulo1{
+    text-align: center;
+}
+/*questionarios*/
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 60px auto; /* 60px do topo, centralizado horizontalmente */
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+#progress-bar {
+    background-color: #34d399;
+    height: 8px;
+    width: 0px; 
+    margin-bottom: 16px;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    align-items: center;
+
+}
+
+#question-container h2 {
+    margin-bottom: 16px;
+
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 10px;
+    border: 1px solid #34d399;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#options button:hover {
+    background-color: #d1fae5;
+}
+.nextQuestion {
+    width: 100%;
+    padding: 12px;
+    background-color: #34d399;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.nextQuestion:hover {
+    background-color: #059669;
+}
+.prevQuestion{
+    width: 100%;
+    padding: 12px;
+    background-color: #34d399;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s
+}
+.prevQuestion:hover{
+    background-color: #059669;
+}
+.option-button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    color: #333; /* Cor do texto padrão */
+}
+
+.option-button:hover {
+    background-color: #e2e2e2;
+}
+
+/* Quando o botão está selecionado */
+.option-button.selected {
+    background-color: #339729 !important; /* Força o verde a ser aplicado */
+    color: white !important;              /* Força o branco no texto */
+}
+.calculate-button {
+    background-color: #339729;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculate-button:hover {
+    background-color: #2b8525;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 8px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;    
+    display: flex;
+    flex-direction: row; /* Coloca os botões em linha*/
+    gap: 10px; /* Espaço entre eles */
+    align-items: center; /* Centraliza os botões horizontalmente */
+    }
+    
+ #mudar {
+        display: flex;
+        flex-direction: column; /* Coloca os botões em coluna */
+        gap: 10px; /* Espaço entre eles */
+        align-items: center; /* Centraliza os botões horizontalmente */
+        margin-bottom: 20px;    
+    }
+    
+
+.toggleButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggleButton.active {
+    background-color: #45a049;
+}
+/* Estilo para os campos de texto do modal */
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para os botões do modal */
+.modal-content button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
